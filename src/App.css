@@ -1,38 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header {
+    padding: 1rem 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #ccc;
+}
+
+header a {
+    display: inline-block;
+    padding: 1rem;
+    margin: 0 2rem;
+    font-size: 1.4rem;
+}
+
 .App {
-  text-align: center;
+    list-style: none;
+    width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App > li {
+    width: 48%;
+    position: relative;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    margin: 2.6rem 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.movie {
+    display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.movie__poster {
+    position: absolute;
+    top: -2rem;
+    left: 2rem;
+    width: 140px;
 }
 
-.App-link {
-  color: #61dafb;
+.movie__info {
+    padding-left: 180px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.movie__info .genres span {
+    font-size: 12px;
+    display: inline-block;
+    color: #666;
+    margin-right: 4px;
+}
+
+.movie_datail {
+    width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.movie_datail div {
+    width: 48%;
 }
